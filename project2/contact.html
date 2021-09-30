@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="sample.css">
+    </head>
+        <body>
+            <header>
+                <nav>
+                
+                          <ul class="tab">
+                          
+                            <li><a href="indx.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT US</a></li>
+                            <li><a href="test.html">TESTIMONIALS</a></li>
+                            <li><a href="gallery.html">GALLERY</a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                        </ul>
+                </nav>
+            <div>
+                
+
+
+
+
+</head>
+<body>
+
+<form action="insert.php" method="POST">
+  <div class="containe ">
+    <h2 style="color: black;">CONTACT US</h2>
+    
+    <hr>
+    <Label for ="fname"><b> Name</b></Label><br>
+	<input type="text" placeholder="enter your name" id="fname" name="name" required > <br>
+    
+	<label for="phoneno"><b>Phone No</b></label><br>
+    <input type="tel"  placeholder="your number" id="phoneno" name="phno" required><br>
+
+    <label for="email"><b>Email</b></label><br>
+    <input type="email" placeholder="Enter Email" name="email" id="email" required><br>
+
+    
+    <label  style="text-align:left"> <b>Write a your message here:</b></label><br>
+		<textarea  class="pg" row=6 cols=15 name="message" required> </textarea><br>
+    <hr>
+    <!-- <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> -->
+
+    <input type="submit" value="submit" name="" class="registerbtn" >
+  </div>
+  
+ 
+</form>
+
+
+
+            <script>
+                var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?55046';
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = url;
+                var options = {
+              "enabled":true,
+              "chatButtonSetting":{
+                  "backgroundColor":"#4dc247",
+                  "ctaText":"Message Us",
+                  "borderRadius":"25",
+                  "marginLeft":"0",
+                  "marginBottom":"60",
+                  "marginRight":"50",
+                  "position":"left",
+              },
+              "brandSetting":{
+                  "brandName":"Quient Training",
+                  "brandSubTitle":"Typically replies within a day",
+                  "brandImg":"https://live.staticflickr.com/8821/17074861125_399f3f78a4_n.jpg",
+                  "welcomeText":"Hi there!\nHow can I help you?",
+                  "messageText":"Hello, I have a question about",
+                  "backgroundColor":"#0a5f54",
+                  "ctaText":"Start Chat",
+                  "borderRadius":"10",
+                  "autoShow":false,
+                  "phoneNumber":"6000070000"
+              }
+            };
+                s.onload = function() {
+                    CreateWhatsappChatWidget(options);
+                };
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            </script>
+        </div>
+        </body>
+            
+
+    
+</html>
